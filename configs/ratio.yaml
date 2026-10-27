@@ -1,0 +1,31 @@
+model:
+  hidden: 256
+  vector_hidden: 16
+  layers: 2
+  heads: 4
+  dropout: 0.1
+split: ratio
+seeds:
+- 20260908
+- 20260919
+- 20260920
+training:
+  lr: 0.0003
+  weight_decay: 0.01
+  betas:
+  - 0.9
+  - 0.999
+  eps: 1.0e-08
+  effective_batch_complexes: 32
+  max_epochs: 100
+  patience: 10
+  gradient_clip_norm: 1
+node_positive_weight: 1.0
+contact_loss_coefficient: 0.1
+precision: bf16
+expected_parameters: 5019682
+expected_counts:
+  train: 1383
+  validation: 170
+  test: 170
+expected_contact_positive_weight: 401.35261994324554

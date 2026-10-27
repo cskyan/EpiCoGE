@@ -1,0 +1,5 @@
+torch==2.11.0
+numpy==2.5.1
+biopython==1.88
+PyYAML==6.0.3
+fair-esm==2.0.0
