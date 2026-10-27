@@ -96,8 +96,7 @@ Every epoch selects a single threshold on **Val** using macro MCC on the 0–1 g
 with step 0.001, preferring the higher threshold on ties. Checkpoint ties retain
 the earlier epoch. `runs/<split>/seed_<seed>/best.pt` is generated locally with
 the selected threshold; `history.json` records the training/Val trace. Training
-never loads the Test samples. As described in the manuscript, AsEP is a
-retrospective development benchmark: early design decisions consulted Test results.
+never loads the Test samples. 
 
 ## Evaluate at the saved Val threshold
 
